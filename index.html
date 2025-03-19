@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/ico/img-ico.ico" type="image/x-icon">
-    <script src="avis.js"></script>
     <link rel="stylesheet" href="styles.css">
     <title>LDcarp - Boutique de pêche</title>
 </head>
@@ -12,6 +11,7 @@
     <header>
         <h1 id="titresite">LDcarp - Vente de plombs</h1>
     </header>
+    
     <nav>
         <ul>
             <li><a href="index.html">Accueil</a></li>
@@ -19,9 +19,10 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
+    
     <div class="container">
-        <h2>Bienvenue sur LDcarp</h2>
-        <p>Découvrez nos articles de pêche de haute qualité.</p>
+        <h2 class="t2">Bienvenue sur LDcarp</h2>
+        <p class="t3">Découvrez nos articles de pêche de haute qualité.</p>
     </div>
 
     <div>
@@ -36,22 +37,28 @@
 
     <h1>Laissez un avis</h1>
 
-    <form id="avisForm">
+    <form id="commentaireForm">
         <label for="nom">Votre nom :</label>
         <input type="text" id="nom" required><br><br>
     
-        <label for="avis">Votre avis :</label><br>
-        <textarea id="avis" rows="4" required></textarea><br><br>
+        <label for="commentaire">Votre commentaire :</label><br>
+        <textarea id="commentaire" rows="4" required></textarea><br><br>
     
         <button type="submit">Envoyer</button>
-      </form>
-    
-      <div class="avis-container" id="avisContainer">
-        <h2>Avis :</h2>
-      </div>
+
+        <div class="commentaire-container" id="commentaireContainer">
+            <h2>Commentaires :</h2>
+        </div>
+
+    </form>
+
+    <br>
 
     <footer>
         <p>&copy; 2025 LDcarp - Tous droits réservés</p>
     </footer>
+
+    <script src="avis.js"></script>
+
 </body>
 </html>

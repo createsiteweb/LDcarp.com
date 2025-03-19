@@ -1,46 +1,75 @@
-// Charger les avis à partir du localStorage
-function loadAvis() {
-    const avisContainer = document.getElementById('avisContainer');
-    const avisData = JSON.parse(localStorage.getItem('avis')) || [];
-    avisContainer.innerHTML = '<h2>Avis :</h2>';
-    avisData.forEach(function(avis) {
-      const avisDiv = document.createElement('div');
-      avisDiv.classList.add('avis');
+// Fonction pour récupérer les commentaires depuis localStorage
+function getCommentaires() {
+    const commentaires = localStorage.getItem('commentaires');
+    return commentaires ? JSON.parse(commentaires) : []; // Si les commentaires existent, on les parse, sinon on retourne un tableau vide
+  }
+
+  // Fonction pour sauvegarder les commentaires dans localStorage
+  function saveCommentaires(commentaires) {
+    localStorage.setItem('commentaires', JSON.stringify(commentaires));
+  }
+
+  // Fonction pour afficher les commentaires
+  function afficherCommentaires() {
+    const commentaireContainer = document.getElementById('commentaireContainer');
+    commentaireContainer.innerHTML = '<h2>Commentaires :</h2>'; // Réinitialiser la liste
+
+    const commentaires = getCommentaires(); // Récupérer les commentaires
+
+    // Afficher tous les commentaires
+    commentaires.forEach((commentaire, index) => {
+      const div = document.createElement('div');
+      div.classList.add('commentaire');
 
       const nomElement = document.createElement('p');
       nomElement.classList.add('nom');
-      nomElement.textContent = avis.nom;
+      nomElement.textContent = commentaire.nom;
 
-      const avisElement = document.createElement('p');
-      avisElement.textContent = avis.avis;
+      const texteElement = document.createElement('p');
+      texteElement.textContent = commentaire.commentaire;
 
-      avisDiv.appendChild(nomElement);
-      avisDiv.appendChild(avisElement);
+      const boutonSupprimer = document.createElement('button');
+      boutonSupprimer.textContent = "Supprimer";
+      boutonSupprimer.classList.add('supprimer');
+      boutonSupprimer.onclick = function() {
+        supprimerCommentaire(index);
+      };
 
-      avisContainer.appendChild(avisDiv);
+      div.appendChild(nomElement);
+      div.appendChild(texteElement);
+      div.appendChild(boutonSupprimer);
+      commentaireContainer.appendChild(div);
     });
   }
 
-  // Sauvegarder un nouvel avis dans le localStorage
-  function saveAvis(nom, avis) {
-    const avisData = JSON.parse(localStorage.getItem('avis')) || [];
-    avisData.push({ nom: nom, avis: avis });
-    localStorage.setItem('avis', JSON.stringify(avisData));
+  // Fonction pour supprimer un commentaire
+  function supprimerCommentaire(index) {
+    const commentaires = getCommentaires(); // Récupérer les commentaires existants
+    commentaires.splice(index, 1); // Supprimer l'élément à l'index spécifié
+    saveCommentaires(commentaires); // Sauvegarder les commentaires après suppression
+
+    afficherCommentaires(); // Mettre à jour l'affichage des commentaires
   }
 
   // Événement de soumission du formulaire
-  document.getElementById('avisForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Empêche l'envoi du formulaire
+  document.getElementById('commentaireForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Empêche le rechargement de la page
 
     const nom = document.getElementById('nom').value;
-    const avis = document.getElementById('avis').value;
+    const commentaire = document.getElementById('commentaire').value;
 
-    if (nom && avis) {
-      saveAvis(nom, avis); // Sauvegarde l'avis dans le localStorage
-      loadAvis(); // Recharge les avis
-      document.getElementById('avisForm').reset(); // Réinitialise le formulaire
+    if (nom && commentaire) {
+      const commentaires = getCommentaires(); // Récupérer les commentaires existants
+      commentaires.push({ nom, commentaire }); // Ajouter le nouveau commentaire
+      saveCommentaires(commentaires); // Sauvegarder les commentaires
+
+      // Afficher les commentaires
+      afficherCommentaires();
+
+      // Réinitialiser le formulaire
+      document.getElementById('commentaireForm').reset();
     }
   });
 
-  // Charger les avis au démarrage de la page
-  loadAvis();
+  // Afficher les commentaires au démarrage de la page
+  afficherCommentaires();
