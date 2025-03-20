@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #d4d4d4;
+    box-sizing: border-box;
+    background-image: url('img/body-img.jpg'); /* Remplace par ton image */
+    background-size: cover; /* Ajuste l'image pour couvrir toute la page */
+    background-repeat: no-repeat; /* Empêche la répétition */
+    background-position: center; /* Centre l'image */
+    background-attachment: fixed; /* Garde l'image fixe lors du défilement */
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    resize: none;
+  }
+
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+
+  .commentaire-container {
+    margin-top: 5px;
+  }
+
+  .commentaire {
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    resize: none;
+  }
+
+  .commentaire .nom {
+    font-weight: bold;
+  }
+
+  .supprimer {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+
+  .supprimer:hover {
+    background-color: #e60000;
+  }
+  
+  header { 
+    background: #2c3e50; 
+    color: white; 
+    padding: 7px;
+  }
+
+  nav { 
+    background: #34495e; 
+    padding: 10px; 
+  }
+  nav ul { 
+    list-style: none; 
+    padding: 0; 
+    text-align: center; 
+  }
+  nav ul li { 
+    display: inline; 
+    margin: 0 15px; 
+    position: relative; 
+  }
+  nav ul li a { 
+    color: white; 
+    text-decoration: none; 
+  }
+
+  #titresite {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer { 
+    background: #2c3e50; 
+    color: white; 
+    text-align: center;  
+    bottom: 0; 
+    width: 100%; 
+  }
+
+  .t2 {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+  }
+
+  .t3 {
+    font-weight: bold;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+  }
+
+  .texte-p {
+    background-color: aliceblue;
+    font-weight: bold;
+  }
+
+  .avis {
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+  }
+
+  h4 {
+    background-color: aliceblue;
+  }
+
+  @keyframes clignoter {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .clignote {
+    text-align: center;
+    font-size: 1rem;
+    animation: clignoter 1s infinite;
+    color: #e60000;
+  }
+
+  /* Media Queries */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    form {
+      padding: 15px;
+    }
+
+    input[type="text"], textarea {
+      font-size: 0.9rem;
+    }
+
+    button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+
+    .commentaire {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.2rem;
+    }
+
+    form {
+      padding: 10px;
+    }
+
+    input[type="text"], textarea {
+      font-size: 0.8rem;
+    }
+
+    button {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+
+    .commentaire {
+      font-size: 0.8rem;
+    }
+
+    .supprimer {
+      font-size: 0.8rem;
+      padding: 4px 8px;
+    }
+  }
+
+  /* Sur écran très large */
+  @media (min-width: 1200px) {
+    body {
+      padding: 40px;
+    }
+
+    form {
+      padding: 40px;
+    }
+  }

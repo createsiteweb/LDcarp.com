@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #d4d4d4;
+    box-sizing: border-box;
+    background-image: url('img/body-img.jpg'); /* Remplace par ton image */
+    background-size: cover; /* Ajuste l'image pour couvrir toute la page */
+    background-repeat: no-repeat; /* Empêche la répétition */
+    background-position: center; /* Centre l'image */
+    background-attachment: fixed; /* Garde l'image fixe lors du défilement */
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  header { 
+    background: #2c3e50; 
+    color: white; 
+    padding: 7px;
+  }
+
+  nav { 
+    background: #34495e; 
+    padding: 10px; 
+  }
+  nav ul { 
+    list-style: none; 
+    padding: 0; 
+    text-align: center; 
+  }
+  nav ul li { 
+    display: inline; 
+    margin: 0 15px; 
+    position: relative; 
+  }
+  nav ul li a { 
+    color: white; 
+    text-decoration: none; 
+  }
+
+  #titresite {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer { 
+    background: #2c3e50; 
+    color: white; 
+    text-align: center;  
+    bottom: 0; 
+    width: 100%; 
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+
+  th {
+    background-color: #f4f4f4;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+ .couleurs {
+    font-size: 14px;
+    color: #555;
+  }
+
+  .prix {
+    font-weight: bold;
+    color: #d00;
+  }
+
+  .price {
+    text-align: center;
+  }
+
+
+  @keyframes clignoter {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .clignote {
+    text-align: center;
+    font-size: 1rem;
+    animation: clignoter 1s infinite;
+    color: #e60000;
+  }
+
+  /* Media Queries */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    form {
+      padding: 15px;
+    }
+
+    input[type="text"], textarea {
+      font-size: 0.9rem;
+    }
+
+    button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+
+    .commentaire {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.2rem;
+    }
+
+    form {
+      padding: 10px;
+    }
+
+    input[type="text"], textarea {
+      font-size: 0.8rem;
+    }
+
+    button {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+
+    .commentaire {
+      font-size: 0.8rem;
+    }
+
+    .supprimer {
+      font-size: 0.8rem;
+      padding: 4px 8px;
+    }
+  }
+
+  /* Sur écran très large */
+  @media (min-width: 1200px) {
+    body {
+      padding: 40px;
+    }
+
+    form {
+      padding: 40px;
+    }
+  }
