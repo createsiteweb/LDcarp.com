@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/ico/img-ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/paiement.css">
+    <title>LDcarp - Boutique de plombs</title>
+</head>
+<body>
+
+    <header>
+        <h1 id="titresite">LDcarp - Vente de plombs</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="plombs.html">Tableau de plombs</a></li>
+            <li><a href="paiement.html">Boutique d'achat</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <br>
+
+    <div class="container">
+        <div class="article">
+            <img src="" alt="plombs">
+            <p>Prix: 1€</p>
+            <button onclick="ajouterAuPanier()">Ajouter au panier</button>
+        </div>
+    </div>
+
+    <div class="cart" id="cart">
+        <h3>Panier</h3>
+        <p id="cart-items"></p>
+        <p>Frais de port (Colissimo) : 5€</p>
+        <p>Total: <span id="total">0</span>€</p>
+        <form action="paiement.php" method="POST">
+            <input type="hidden" name="email" value="client@example.com">
+            <input type="hidden" name="total" value="50">
+            <button type="submit" class="btn">Payer</button>
+        </form>
+    </div>
+
+    <script src="javascript/paiement.js"></script>
+
+    <footer>
+        <p>&copy; 2025 LDcarp - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>
