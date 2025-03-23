@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #d4d4d4;
+    box-sizing: border-box;
+    background-image: url('img/body-img.jpg'); /* Remplace par ton image */
+    background-size: cover; /* Ajuste l'image pour couvrir toute la page */
+    background-repeat: no-repeat; /* Empêche la répétition */
+    background-position: center; /* Centre l'image */
+    background-attachment: fixed; /* Garde l'image fixe lors du défilement */
+}
+
+h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+  
+header { 
+    background: #2c3e50; 
+    color: white; 
+    padding: 7px;
+}
+
+nav { 
+    background: #34495e; 
+    padding: 10px; 
+}
+  
+nav ul { 
+    list-style: none; 
+    padding: 0; 
+    text-align: center; 
+}
+  
+nav ul li { 
+    display: inline; 
+    margin: 0 15px; 
+    position: relative; 
+}
+
+nav ul li a { 
+    color: white; 
+    text-decoration: none; 
+}
+ 
+#titresite {
+    display: flex;
+    justify-content: center;
+}
+
+footer { 
+    background: #2c3e50; 
+    color: white; 
+    text-align: center;  
+    bottom: 0; 
+    width: 100%; 
+}
+
+.container {
+    max-width: 250px;
+    display: flex; /* Aligne les .parent sur une ligne */
+    justify-content: space-between; /* Ajoute un espace égal entre eux */
+    align-items: center; /* Centre verticalement */
+    gap: 35px;
+}
+.article, .cart {
+    border: 1px solid #619933;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex; /* Permet d'organiser les enfants */
+    justify-content: center; /* Centre les enfants horizontalement */
+    align-items: center; /* Centre les enfants verticalement */
+}
+.cart {
+    display: none;
+}
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #0056b3;
+}
