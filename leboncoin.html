@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles avec Couleur et Poids</title>
+    <style>
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 200px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+        }
+
+        .product input {
+            width: 80%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        .product button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .product button:hover {
+            background-color: #45a049;
+        }
+
+        .product-details {
+            margin-top: 10px;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Articles avec Couleur et Poids</h1>
+
+    <div class="products">
+        <!-- Premier article -->
+        <div class="product">
+            <h3>Produit 1</h3>
+            <input type="text" id="color1" placeholder="Couleur">
+            <input type="number" id="weight1" placeholder="Poids (kg)" min="0">
+            <button onclick="addDetails('1')">Ajouter</button>
+            <div id="details1" class="product-details"></div>
+        </div>
+
+        <!-- Deuxième article -->
+        <div class="product">
+            <h3>Produit 2</h3>
+            <input type="text" id="color2" placeholder="Couleur">
+            <input type="number" id="weight2" placeholder="Poids (kg)" min="0">
+            <button onclick="addDetails('2')">Ajouter</button>
+            <div id="details2" class="product-details"></div>
+        </div>
+
+        <!-- Troisième article -->
+        <div class="product">
+            <h3>Produit 3</h3>
+            <input type="text" id="color3" placeholder="Couleur">
+            <input type="number" id="weight3" placeholder="Poids (kg)" min="0">
+            <button onclick="addDetails('3')">Ajouter</button>
+            <div id="details3" class="product-details"></div>
+        </div>
+    </div>
+
+    <script>
+        // Fonction pour ajouter la couleur et le poids au produit
+        function addDetails(productId) {
+            const color = document.getElementById('color' + productId).value;
+            const weight = document.getElementById('weight' + productId).value;
+
+            if (color && weight) {
+                // Crée un message avec la couleur et le poids
+                const detailsMessage = `Couleur: ${color}, Poids: ${weight} kg`;
+
+                // Ajoute ce message dans la div du produit
+                document.getElementById('details' + productId).textContent = detailsMessage;
+            } else {
+                alert("Veuillez entrer la couleur et le poids.");
+            }
+        }
+    </script>
+
+</body>
+</html>
