@@ -127,3 +127,11 @@ button:hover {
     display: flex;
     justify-content: center;
 }
+.panier {
+    display: flex;
+    justify-content: center;
+}
+.passerCommande {
+    display: flex;
+    justify-content: center;
+}

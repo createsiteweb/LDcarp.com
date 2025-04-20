@@ -1,5 +1,5 @@
 // Tableau pour stocker les paniers
-let paniers = Array.from({ length: 19 }, () => []);  // Crée un tableau de 19 sous-tableaux
+let paniers = Array.from({ length: 23 }, () => []);  // Crée un tableau de 23 sous-tableaux
 
 // Fonction pour ajouter un article au panier spécifique
 function addItemToCart(cartNumber) {
@@ -47,7 +47,7 @@ function passerCommande() {
     // Parcourir tous les paniers
     paniers.forEach((panier, cartNumber) => {
         panier.forEach(item => {
-            emailBody += `Panier ${cartNumber + 1} - Article: ${item.article}\nCouleur: ${item.color}\nQuantité: ${item.quantity}\nGrammes: ${item.gramme}Aspect: ${item.aspect}\n`;
+            emailBody += `Panier ${cartNumber + 1} - \nArticle: ${item.article}\nCouleur: ${item.color}\nQuantité: ${item.quantity}\nGrammes: ${item.gramme}\nAspect: ${item.aspect}\n\n`;
         });
     });
 

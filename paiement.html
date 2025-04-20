@@ -27,6 +27,7 @@
     <img class="img-ld" src="img/LDcarp.jpg" alt="LDcarp" width="950" height="250">
 
     <br>
+    <br>
 
     <div class="container"></div>
 
@@ -34,7 +35,7 @@
         <div id="panier-container">
             <!-- Panier 1 -->
             <div class="panier" id="panier1">
-                <img src="img/plombs/Distance.png" alt="Distance" height="150" width="225">
+                <img src="img/plombs/Distance.jpg" alt="Distance" height="200" width="235">
                 <form id="addItemForm1">
                     <label for="article1">Sélectionnez votre article :</label><br>
                     <select id="article1">
@@ -102,7 +103,7 @@
             <br>
 
             <div class="panier" id="panier2">
-                <img src="img/plombs/Trilobe.png" alt="Trilobe" height="150" width="225">
+                <img src="img/plombs/Trilobe.jpg" alt="Trilobe" height="200" width="235">
                 <form id="addItemForm2">
                     <label for="article2">Sélectionnez votre article :</label><br>
                     <select id="article2">
@@ -165,7 +166,7 @@
         <br>
 
         <div class="panier" id="panier3">
-            <img src="img/plombs/squelette.png" alt="" height="150" width="225">
+            <img src="img/plombs/squelette.png" alt="" height="200" width="235">
             <form id="addItemForm3">
                 <label for="article3">Sélectionnez votre article :</label><br>
                 <select id="article3">
@@ -225,7 +226,7 @@
         <br>
 
         <div class="panier" id="panier4">
-            <img src="img/plombs/Triface.png" alt="" height="150" width="225">
+            <img src="img/plombs/Triface.jpg" alt="" height="200" width="235">
             <form id="addItemForm4">
                 <label for="article4">Sélectionnez votre article :</label><br>
                 <select id="article4">
@@ -283,12 +284,689 @@
                 <tbody></tbody>
             </table>
         </div>
+
+        <br>
+
+        <div class="panier" id="panier5">
+            <img src="img/plombs/sondeur.jpg" alt="" height="200" width="235">
+            <form id="addItemForm5">
+                <label for="article5">Sélectionnez votre article :</label><br>
+                <select id="article5">
+                    <option value="sondeur">Sondeur</option>
+                </select>
+
+                <select id="color5">
+                    <option value="Vert camo">Vert camo</option>
+                    <option value="Vert herbier">Vert herbier</option>
+                    <option value="Sable vert">Sable vert</option>
+                    <option value="Sable claire">Sable claire</option>
+                    <option value="Sable foncé">Sable foncé</option>
+                    <option value="Pierre">Pierre</option>
+                    <option value="Noir bleuté">Noir bleuté</option>
+                    <option value="Noir">Noir</option>
+                </select>
+
+                <label for="quantity5">Quantité :</label><br>
+                <input type="number" id="quantity5" value="1" min="1">
+                
+
+                <label for="gramme5">Grammes :</label>
+                
+                
+                <select id="gramme5">
+                    <option value="100">100</option>
+                </select>
+
+
+                <label for="aspect5">Aspect :</label>
+                
+                
+                <select id="aspect5">
+                    <option value="lisse">Lisse</option>
+                    <option value="granuleux">Granuleux</option>
+                </select>
+
+                <button type="button" onclick="addItemToCart(5)">Ajouter</button>
+            </form>
+            <br>
+            <table id="cartTable5">
+                <thead>
+                    <tr>
+                        <th>Article</th>
+                        <th>Couleur</th>
+                        <th>Quantité</th>
+                        <th>Grammes</th>
+                        <th>Aspect</th>
+                        <th>Supprimer</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <br>
+
+        <div class="panier" id="panier6">
+            <img src="img/plombs/Boule.jpg" alt="" height="200" width="235">
+            <form id="addItemForm6">
+                <label for="article6">Sélectionnez votre article :</label><br>
+                <select id="article6">
+                    <option value="Boule">Boule</option>
+                </select>
+
+                <select id="color6">
+                    <option value="Vert camo">Vert camo</option>
+                    <option value="Vert herbier">Vert herbier</option>
+                    <option value="Sable vert">Sable vert</option>
+                    <option value="Sable claire">Sable claire</option>
+                    <option value="Sable foncé">Sable foncé</option>
+                    <option value="Pierre">Pierre</option>
+                    <option value="Noir bleuté">Noir bleuté</option>
+                    <option value="Noir">Noir</option>
+                </select>
+
+                <label for="quantity6">Quantité :</label><br>
+                <input type="number" id="quantity6" value="1" min="1">
+                
+
+                <label for="gramme6">Grammes :</label>
+                
+                
+                <select id="gramme6">
+                    <option value="40">40</option>
+                    <option value="60">60</option>
+                    <option value="80">80</option>
+                </select>
+
+
+                <label for="aspect6">Aspect :</label>
+                
+                
+                <select id="aspect6">
+                    <option value="lisse">Lisse</option>
+                    <option value="granuleux">Granuleux</option>
+                </select>
+
+                <button type="button" onclick="addItemToCart(6)">Ajouter</button>
+            </form>
+            <br>
+            <table id="cartTable6">
+                <thead>
+                    <tr>
+                        <th>Article</th>
+                        <th>Couleur</th>
+                        <th>Quantité</th>
+                        <th>Grammes</th>
+                        <th>Aspect</th>
+                        <th>Supprimer</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <br>
+        
+        <div class="panier" id="panier7">
+            <img src="img/plombs/Grappa.jpg" alt="" height="200" width="235">
+            <form id="addItemForm7">
+                <label for="article7">Sélectionnez votre article :</label><br>
+                <select id="article7">
+                    <option value="Grappa">Grappa</option>
+                </select>
+
+                <select id="color7">
+                    <option value="Vert camo">Vert camo</option>
+                    <option value="Vert herbier">Vert herbier</option>
+                    <option value="Sable vert">Sable vert</option>
+                    <option value="Sable claire">Sable claire</option>
+                    <option value="Sable foncé">Sable foncé</option>
+                    <option value="Pierre">Pierre</option>
+                    <option value="Noir bleuté">Noir bleuté</option>
+                    <option value="Noir">Noir</option>
+                </select>
+
+                <label for="quantity7">Quantité :</label><br>
+                <input type="number" id="quantity7" value="1" min="1">
+                
+
+                <label for="gramme7">Grammes :</label>
+                
+                
+                <select id="gramme7">
+                    <option value="70">40</option>
+                    <option value="80">60</option>
+                    <option value="90">80</option>
+                    <option value="110">110</option>
+                    <option value="300">300</option>
+                    <option value="350">350</option>
+                </select>
+
+
+                <label for="aspect7">Aspect :</label>
+                
+                
+                <select id="aspect7">
+                    <option value="lisse">Lisse</option>
+                    <option value="granuleux">Granuleux</option>
+                </select>
+
+                <button type="button" onclick="addItemToCart(7)">Ajouter</button>
+            </form>
+            <br>
+            <table id="cartTable7">
+                <thead>
+                    <tr>
+                        <th>Article</th>
+                        <th>Couleur</th>
+                        <th>Quantité</th>
+                        <th>Grammes</th>
+                        <th>Aspect</th>
+                        <th>Supprimer</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
         
     </div>
 
     <br>
+
+    <div class="panier" id="panier8">
+        <img src="img/plombs/Moule.jpg" alt="" height="200" width="235">
+        <form id="addItemForm8">
+            <label for="article8">Sélectionnez votre article :</label><br>
+            <select id="article8">
+                <option value="Moule">Moule</option>
+            </select>
+
+            <select id="color8">
+                <option value="Vert camo">Vert camo</option>
+                <option value="Vert herbier">Vert herbier</option>
+                <option value="Sable vert">Sable vert</option>
+                <option value="Sable claire">Sable claire</option>
+                <option value="Sable foncé">Sable foncé</option>
+                <option value="Pierre">Pierre</option>
+                <option value="Noir bleuté">Noir bleuté</option>
+                <option value="Noir">Noir</option>
+            </select>
+
+            <label for="quantity8">Quantité :</label><br>
+            <input type="number" id="quantity8" value="1" min="1">
+            
+
+            <label for="gramme8">Grammes :</label>
+            
+            
+            <select id="gramme8">
+                <option value="70">40</option>
+                <option value="90">90</option>
+            </select>
+
+
+            <label for="aspect8">Aspect :</label>
+            
+            
+            <select id="aspect8">
+                <option value="lisse">Lisse</option>
+                <option value="granuleux">Granuleux</option>
+            </select>
+
+            <button type="button" onclick="addItemToCart(8)">Ajouter</button>
+        </form>
+        <br>
+        <table id="cartTable8">
+            <thead>
+                <tr>
+                    <th>Article</th>
+                    <th>Couleur</th>
+                    <th>Quantité</th>
+                    <th>Grammes</th>
+                    <th>Aspect</th>
+                    <th>Supprimer</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <br>
+
+    <div class="panier" id="panier9">
+        <img src="img/plombs/Branche.jpg" alt="" height="200" width="235">
+        <form id="addItemForm9">
+            <label for="article9">Sélectionnez votre article :</label><br>
+            <select id="article9">
+                <option value="Branche">Branche</option>
+            </select>
+
+            <select id="color9">
+                <option value="Vert camo">Vert camo</option>
+                <option value="Vert herbier">Vert herbier</option>
+                <option value="Sable vert">Sable vert</option>
+                <option value="Sable claire">Sable claire</option>
+                <option value="Sable foncé">Sable foncé</option>
+                <option value="Pierre">Pierre</option>
+                <option value="Noir bleuté">Noir bleuté</option>
+                <option value="Noir">Noir</option>
+            </select>
+
+            <label for="quantity9">Quantité :</label><br>
+            <input type="number" id="quantity9" value="1" min="1">
+            
+
+            <label for="gramme9">Grammes :</label>
+            
+            
+            <select id="gramme9">
+                <option value="70">70</option>
+                <option value="90">90</option>
+            </select>
+
+
+            <label for="aspect9">Aspect :</label>
+            
+            
+            <select id="aspect9">
+                <option value="lisse">Lisse</option>
+                <option value="granuleux">Granuleux</option>
+            </select>
+
+            <button type="button" onclick="addItemToCart(9)">Ajouter</button>
+        </form>
+        <br>
+        <table id="cartTable9">
+            <thead>
+                <tr>
+                    <th>Article</th>
+                    <th>Couleur</th>
+                    <th>Quantité</th>
+                    <th>Grammes</th>
+                    <th>Aspect</th>
+                    <th>Supprimer</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <br>
+
+    <div class="panier" id="panier10">
+        <img src="img/plombs/Plomb PLat.jpg" alt="" height="200" width="235">
+        <form id="addItemForm10">
+            <label for="article10">Sélectionnez votre article :</label><br>
+            <select id="article10">
+                <option value="Plomb Plat">Plomb Plat</option>
+            </select>
+
+            <select id="color10">
+                <option value="Vert camo">Vert camo</option>
+                <option value="Vert herbier">Vert herbier</option>
+                <option value="Sable vert">Sable vert</option>
+                <option value="Sable claire">Sable claire</option>
+                <option value="Sable foncé">Sable foncé</option>
+                <option value="Pierre">Pierre</option>
+                <option value="Noir bleuté">Noir bleuté</option>
+                <option value="Noir">Noir</option>
+            </select>
+
+            <label for="quantity10">Quantité :</label><br>
+            <input type="number" id="quantity10" value="1" min="1">
+            
+
+            <label for="gramme10">Grammes :</label>
+            
+            
+            <select id="gramme10">
+                <option value="70">70</option>
+                <option value="90">90</option>
+                <option value="120">120</option>
+                <option value="140">140</option>
+                <option value="200">200</option>
+            </select>
+
+
+            <label for="aspect10">Aspect :</label>
+            
+            
+            <select id="aspect10">
+                <option value="lisse">Lisse</option>
+                <option value="granuleux">Granuleux</option>
+            </select>
+
+            <button type="button" onclick="addItemToCart(10)">Ajouter</button>
+        </form>
+        <br>
+        <table id="cartTable10">
+            <thead>
+                <tr>
+                    <th>Article</th>
+                    <th>Couleur</th>
+                    <th>Quantité</th>
+                    <th>Grammes</th>
+                    <th>Aspect</th>
+                    <th>Supprimer</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <br>
+
+    <div class="panier" id="panier11">
+        <img src="img/plombs/Losange.jpg" alt="" height="200" width="235">
+        <form id="addItemForm11">
+            <label for="article11">Sélectionnez votre article :</label><br>
+            <select id="article11">
+                <option value="Losange">Losange</option>
+            </select>
+
+            <select id="color11">
+                <option value="Vert camo">Vert camo</option>
+                <option value="Vert herbier">Vert herbier</option>
+                <option value="Sable vert">Sable vert</option>
+                <option value="Sable claire">Sable claire</option>
+                <option value="Sable foncé">Sable foncé</option>
+                <option value="Pierre">Pierre</option>
+                <option value="Noir bleuté">Noir bleuté</option>
+                <option value="Noir">Noir</option>
+            </select>
+
+            <label for="quantity11">Quantité :</label><br>
+            <input type="number" id="quantity11" value="1" min="1">
+            
+
+            <label for="gramme11">Grammes :</label>
+            
+            
+            <select id="gramme11">
+                <option value="20">20</option>
+                <option value="40">40</option>
+                <option value="60">60</option>
+                <option value="80">80</option>
+            </select>
+
+
+            <label for="aspect11">Aspect :</label>
+            
+            
+            <select id="aspect11">
+                <option value="lisse">Lisse</option>
+                <option value="granuleux">Granuleux</option>
+            </select>
+
+            <button type="button" onclick="addItemToCart(11)">Ajouter</button>
+        </form>
+        <br>
+        <table id="cartTable11">
+            <thead>
+                <tr>
+                    <th>Article</th>
+                    <th>Couleur</th>
+                    <th>Quantité</th>
+                    <th>Grammes</th>
+                    <th>Aspect</th>
+                    <th>Supprimer</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <br>
+
+    <div class="panier" id="panier12">
+        <img src="img/plombs/Distanceinline.jpg" alt="" height="200" width="235">
+        <form id="addItemForm12">
+            <label for="article12">Sélectionnez votre article :</label><br>
+            <select id="article12">
+                <option value="Distance inline">Distance inline</option>
+            </select>
+
+            <select id="color12">
+                <option value="Vert camo">Vert camo</option>
+                <option value="Vert herbier">Vert herbier</option>
+                <option value="Sable vert">Sable vert</option>
+                <option value="Sable claire">Sable claire</option>
+                <option value="Sable foncé">Sable foncé</option>
+                <option value="Pierre">Pierre</option>
+                <option value="Noir bleuté">Noir bleuté</option>
+                <option value="Noir">Noir</option>
+            </select>
+
+            <label for="quantity12">Quantité :</label><br>
+            <input type="number" id="quantity12" value="1" min="1">
+            
+
+            <label for="gramme12">Grammes :</label>
+            
+            
+            <select id="gramme12">
+                <option value="70">70</option>
+                <option value="80">80</option>
+                <option value="90">90</option>
+            </select>
+
+
+            <label for="aspect12">Aspect :</label>
+            
+            
+            <select id="aspect12">
+                <option value="lisse">Lisse</option>
+                <option value="granuleux">Granuleux</option>
+            </select>
+
+            <button type="button" onclick="addItemToCart(12)">Ajouter</button>
+        </form>
+        <br>
+        <table id="cartTable12">
+            <thead>
+                <tr>
+                    <th>Article</th>
+                    <th>Couleur</th>
+                    <th>Quantité</th>
+                    <th>Grammes</th>
+                    <th>Aspect</th>
+                    <th>Supprimer</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <br>
+
+    <div class="panier" id="panier13">
+        <img src="img/plombs/Triface inline.jpg" alt="" height="200" width="235">
+        <form id="addItemForm13">
+            <label for="article13">Sélectionnez votre article :</label><br>
+            <select id="article13">
+                <option value="Triface inline">Triface inline</option>
+            </select>
+
+            <select id="color13">
+                <option value="Vert camo">Vert camo</option>
+                <option value="Vert herbier">Vert herbier</option>
+                <option value="Sable vert">Sable vert</option>
+                <option value="Sable claire">Sable claire</option>
+                <option value="Sable foncé">Sable foncé</option>
+                <option value="Pierre">Pierre</option>
+                <option value="Noir bleuté">Noir bleuté</option>
+                <option value="Noir">Noir</option>
+            </select>
+
+            <label for="quantity13">Quantité :</label><br>
+            <input type="number" id="quantity13" value="1" min="1">
+            
+
+            <label for="gramme13">Grammes :</label>
+            
+            
+            <select id="gramme13">
+                <option value="115">115</option>
+                <option value="125">125</option>
+                <option value="135">135</option>
+            </select>
+
+
+            <label for="aspect13">Aspect :</label>
+            
+            
+            <select id="aspect13">
+                <option value="lisse">Lisse</option>
+                <option value="granuleux">Granuleux</option>
+            </select>
+
+            <button type="button" onclick="addItemToCart(13)">Ajouter</button>
+        </form>
+        <br>
+        <table id="cartTable13">
+            <thead>
+                <tr>
+                    <th>Article</th>
+                    <th>Couleur</th>
+                    <th>Quantité</th>
+                    <th>Grammes</th>
+                    <th>Aspect</th>
+                    <th>Supprimer</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <br>
+
+    <div class="panier" id="panier14">
+        <img src="img/plombs/Poire inline.jpg" alt="" height="200" width="235">
+        <form id="addItemForm14">
+            <label for="article14">Sélectionnez votre article :</label><br>
+            <select id="article14">
+                <option value="Poire inline">Poire inline</option>
+            </select>
+
+            <select id="color14">
+                <option value="Vert camo">Vert camo</option>
+                <option value="Vert herbier">Vert herbier</option>
+                <option value="Sable vert">Sable vert</option>
+                <option value="Sable claire">Sable claire</option>
+                <option value="Sable foncé">Sable foncé</option>
+                <option value="Pierre">Pierre</option>
+                <option value="Noir bleuté">Noir bleuté</option>
+                <option value="Noir">Noir</option>
+            </select>
+
+            <label for="quantity14">Quantité :</label><br>
+            <input type="number" id="quantity14" value="1" min="1">
+            
+
+            <label for="gramme14">Grammes :</label>
+            
+            
+            <select id="gramme14">
+                <option value="60">60</option>
+                <option value="80">80</option>
+                <option value="90">90</option>
+            </select>
+
+
+            <label for="aspect14">Aspect :</label>
+            
+            
+            <select id="aspect14">
+                <option value="lisse">Lisse</option>
+                <option value="granuleux">Granuleux</option>
+            </select>
+
+            <button type="button" onclick="addItemToCart(14)">Ajouter</button>
+        </form>
+        <br>
+        <table id="cartTable14">
+            <thead>
+                <tr>
+                    <th>Article</th>
+                    <th>Couleur</th>
+                    <th>Quantité</th>
+                    <th>Grammes</th>
+                    <th>Aspect</th>
+                    <th>Supprimer</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <br>
+    <div class="panier" id="panier15">
+        <img src="img/plombs/Grip aillettes.jpg" alt="" height="200" width="235">
+        <form id="addItemForm15">
+            <label for="article15">Sélectionnez votre article :</label><br>
+            <select id="article15">
+                <option value="Grip ailettes">Grip ailettes</option>
+            </select>
+
+            <select id="color15">
+                <option value="Vert camo">Vert camo</option>
+                <option value="Vert herbier">Vert herbier</option>
+                <option value="Sable vert">Sable vert</option>
+                <option value="Sable claire">Sable claire</option>
+                <option value="Sable foncé">Sable foncé</option>
+                <option value="Pierre">Pierre</option>
+                <option value="Noir bleuté">Noir bleuté</option>
+                <option value="Noir">Noir</option>
+            </select>
+
+            <label for="quantity15">Quantité :</label><br>
+            <input type="number" id="quantity14" value="1" min="1">
+            
+
+            <label for="gramme15">Grammes :</label>
+            
+            
+            <select id="gramme15">
+                <option value="55">55</option>
+                <option value="75">75</option>
+                <option value="90">90</option>
+                <option value="110">110</option>
+            </select>
+
+
+            <label for="aspect15">Aspect :</label>
+            
+            
+            <select id="aspect15">
+                <option value="lisse">Lisse</option>
+                <option value="granuleux">Granuleux</option>
+            </select>
+
+            <button type="button" onclick="addItemToCart(15)">Ajouter</button>
+        </form>
+        <br>
+        <table id="cartTable15">
+            <thead>
+                <tr>
+                    <th>Article</th>
+                    <th>Couleur</th>
+                    <th>Quantité</th>
+                    <th>Grammes</th>
+                    <th>Aspect</th>
+                    <th>Supprimer</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
     
+</div>
+
+<br>
+
+<div class="passerCommande">
     <button class="commander" type="button" onclick="passerCommande()">Passer la commande</button>
+</div>
     
     <script src="javascript/paiement.js"></script>
 
