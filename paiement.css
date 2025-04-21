@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #d4d4d4;
+    box-sizing: border-box;
+    background-image: url('img/body-img.jpg'); /* Remplace par ton image */
+    background-size: cover; /* Ajuste l'image pour couvrir toute la page */
+    background-repeat: no-repeat; /* Empêche la répétition */
+    background-position: center; /* Centre l'image */
+    background-attachment: fixed; /* Garde l'image fixe lors du défilement */
+}
+
+h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+  
+header { 
+    background: #2c3e50; 
+    color: white; 
+    padding: 7px;
+}
+
+nav { 
+    background: #34495e; 
+    padding: 10px; 
+}
+  
+nav ul { 
+    list-style: none; 
+    padding: 0; 
+    text-align: center; 
+}
+  
+nav ul li { 
+    display: inline; 
+    margin: 0 15px; 
+    position: relative; 
+}
+
+nav ul li a { 
+    color: white; 
+    text-decoration: none; 
+}
+ 
+#titresite {
+    display: flex;
+    justify-content: center;
+}
+
+footer { 
+    background: #2c3e50; 
+    color: white; 
+    text-align: center;  
+    bottom: 0; 
+    width: 100%; 
+}
+
+.container {
+    max-width: 250px;
+    display: flex; /* Aligne les .parent sur une ligne */
+    justify-content: space-between; /* Ajoute un espace égal entre eux */
+    align-items: center; /* Centre verticalement */
+    gap: 35px;
+}
+.article, .cart {
+    border: 1px solid #619933;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex; /* Permet d'organiser les enfants */
+    justify-content: center; /* Centre les enfants horizontalement */
+    align-items: center; /* Centre les enfants verticalement */
+}
+.cart {
+    display: flex;
+}
+
+table {
+    border-collapse: collapse; /* Pour que les bordures soient fusionnées entre les cellules */
+}
+
+th, td {
+    padding: 10px; /* Espacement intérieur des cellules */
+    border: 1px solid #ccc; /* Bordures des cellules */
+    text-align: center; /* Alignement du texte au centre */
+}
+
+th {
+    background-color: #f2f2f2; /* Fond des en-têtes de colonne */
+    font-weight: bold; /* Mettre en gras le texte des en-têtes */
+}
+button {
+    background-color: #2cad3d;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.commander {
+    background-color: rgb(97, 49, 49);
+}
+button:hover {
+    background-color: #0056b3;
+}
+.img-ld {
+    margin-left: 450px;
+    display: flex;
+    justify-content: center;
+}
+.panier {
+    display: flex;
+    justify-content: center;
+}
+.passerCommande {
+    display: flex;
+    justify-content: center;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    form {
+      padding: 15px;
+    }
+
+    input[type="text"], textarea {
+      font-size: 0.9rem;
+    }
+
+    button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+
+    .commentaire {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.2rem;
+    }
+
+    form {
+      padding: 10px;
+    }
+
+    input[type="text"], textarea {
+      font-size: 0.8rem;
+    }
+
+    button {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+
+    .commentaire {
+      font-size: 0.8rem;
+    }
+
+    .supprimer {
+      font-size: 0.8rem;
+      padding: 4px 8px;
+    }
+  }
+
+  /* Sur écran très large */
+  @media (min-width: 1200px) {
+    body {
+      padding: 40px;
+    }
+
+    form {
+      padding: 40px;
+    }
+  }
