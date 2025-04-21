@@ -47,7 +47,7 @@ function passerCommande() {
     // Parcourir tous les paniers
     paniers.forEach((panier, cartNumber) => {
         panier.forEach(item => {
-            emailBody += `Panier ${cartNumber + 1} - \nArticle: ${item.article}\nCouleur: ${item.color}\nQuantité: ${item.quantity}\nGrammes: ${item.gramme}\nAspect: ${item.aspect}\n\n`;
+            emailBody += `\nArticle: ${item.article}\nCouleur: ${item.color}\nQuantité: ${item.quantity}\nGrammes: ${item.gramme}\nAspect: ${item.aspect}\n\n`;
         });
     });
 

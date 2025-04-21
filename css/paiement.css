@@ -135,3 +135,65 @@ button:hover {
     display: flex;
     justify-content: center;
 }
+/* Media Queries */
+@media (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    form {
+      padding: 15px;
+    }
+
+    input[type="text"], textarea {
+      font-size: 0.9rem;
+    }
+
+    button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+
+    .commentaire {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.2rem;
+    }
+
+    form {
+      padding: 10px;
+    }
+
+    input[type="text"], textarea {
+      font-size: 0.8rem;
+    }
+
+    button {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+
+    .commentaire {
+      font-size: 0.8rem;
+    }
+
+    .supprimer {
+      font-size: 0.8rem;
+      padding: 4px 8px;
+    }
+  }
+
+  /* Sur écran très large */
+  @media (min-width: 1200px) {
+    body {
+      padding: 40px;
+    }
+
+    form {
+      padding: 40px;
+    }
+  }
