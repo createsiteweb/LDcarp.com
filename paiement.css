@@ -123,6 +123,11 @@ button:hover {
     background-color: #0056b3;
 }
 .img-ld {
+    margin-left: 450px;
+    display: flex;
+    justify-content: center;
+}
+.panier {
     display: flex;
     justify-content: center;
 }
