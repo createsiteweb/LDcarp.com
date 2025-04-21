@@ -127,6 +127,10 @@ button:hover {
     display: flex;
     justify-content: center;
 }
+.panier {
+    display: flex;
+    justify-content: center;
+}
 .passerCommande {
     display: flex;
     justify-content: center;
@@ -185,11 +189,29 @@ button:hover {
 
   /* Sur écran très large */
   @media (min-width: 1200px) {
-    body {
-      padding: 40px;
+    h1 {
+        font-size: 1.2rem;
+      }
+  
+      form {
+        padding: 10px;
+      }
+  
+      input[type="text"], textarea {
+        font-size: 0.8rem;
+      }
+  
+      button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+      }
+  
+      .commentaire {
+        font-size: 0.8rem;
+      }
+  
+      .supprimer {
+        font-size: 0.8rem;
+        padding: 4px 8px;
+      }
     }
-
-    form {
-      padding: 40px;
-    }
-  }
